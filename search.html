@@ -1,0 +1,437 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>サイト内検索 - 靜崗県三腑市</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>靜崗県三腑市</h1>
+
+    <p>三腑市公式ホームページ</p>
+
+
+    <div class="search-box">
+
+        <form action="search.html" method="get">
+
+            <input
+                type="text"
+                name="q"
+                placeholder="サイト内検索">
+
+            <button type="submit">
+                検索
+            </button>
+
+        </form>
+
+    </div>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">ホーム</a> |
+
+    <a href="government.html">市政情報</a> |
+
+    <a href="tourism.html">観光・イベント</a> |
+
+    <a href="living.html">暮らしの情報</a> |
+
+    <a href="culture.html">文化・歴史</a>
+
+</nav>
+
+
+<main>
+
+
+    <h2>サイト内検索</h2>
+
+
+    <form action="search.html" method="get">
+
+        <input
+            type="text"
+            name="q"
+            placeholder="検索したい言葉を入力してください">
+
+        <button type="submit">
+            検索
+        </button>
+
+    </form>
+
+
+    <div id="search-results">
+
+        <p>
+            検索結果を表示しています。
+        </p>
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        靜崗県三腑市役所
+    </p>
+
+    <p>
+        Copyright © Sanpu City All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script>
+
+
+    // URLから検索した言葉を取得
+
+    const params =
+        new URLSearchParams(window.location.search);
+
+    const keyword =
+        params.get("q");
+
+
+    // 検索結果を表示する場所
+
+    const results =
+        document.getElementById("search-results");
+
+
+    if (keyword) {
+
+
+        /*
+        =====================================
+        三腑市
+        =====================================
+        */
+
+        if (keyword === "三腑市") {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="about.html">
+                        三腑市について
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市の概要、人口、地理などについて紹介しています。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        三腑月仰祭
+        =====================================
+        */
+
+        } else if (keyword === "三腑月仰祭") {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="festival.html">
+                        三腑月仰祭について
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市に古くから伝わる
+                    伝統行事「三腑月仰祭」についてご紹介します。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        月仰祭
+        =====================================
+        */
+
+        } else if (keyword === "月仰祭") {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="festival.html">
+                        月仰祭について
+                    </a>
+
+                </h3>
+
+                <p>
+                    毎年夏に開催される
+                    三腑市の伝統行事について紹介しています。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        文化財
+        =====================================
+        */
+
+        } else if (keyword === "文化財") {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="cultural.html">
+                        三腑市文化財検索
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市が指定・登録する文化財を検索できます。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        鷹月統生
+        =====================================
+        */
+
+        } else if (
+            keyword === "鷹月統生"
+            || keyword === "鷹月教授"
+            || keyword === "鷹月"
+        ) {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="takatsuki-memorial.html">
+                        鷹月統生教授を悼んで
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市の歴史・文化に関する研究および
+                    文化財調査に長年協力された
+                    鷹月統生教授のご逝去について。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        講演会・講座
+        =====================================
+        */
+
+        } else if (
+            keyword === "講談会"
+            || keyword === "講演会"
+            || keyword === "市民講座"
+            || keyword === "地域の信仰"
+        ) {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="lecture.html">
+                        三腑市民講座「地域に残る月の信仰」
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市では、地域の歴史や文化について学ぶ
+                    市民向け講座を開催しています。
+                </p>
+
+
+                <hr>
+
+
+                <h3>
+
+                    <a href="professor-news.html">
+                        地域文化に関する講演会のお知らせ
+                    </a>
+
+                </h3>
+
+                <p>
+                    郷土の文化や伝統行事について、
+                    専門家を招いて講演会を開催します。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        訃報・教授の死
+        =====================================
+        */
+
+        } else if (
+            keyword === "訃報"
+            || keyword === "教授 訃報"
+            || keyword === "教授の死"
+            || keyword === "鷹月統生 訃報"
+        ) {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    <a href="takatsuki-memorial.html">
+                        鷹月統生教授を悼んで
+                    </a>
+
+                </h3>
+
+                <p>
+                    三腑市の歴史・文化に関する研究に
+                    長年携わった鷹月統生教授の
+                    ご逝去について。
+                </p>
+
+                <p>
+                    心より哀悼の意を表します。
+                </p>
+
+            `;
+
+
+        /*
+        =====================================
+        それ以外
+        =====================================
+        */
+
+        } else {
+
+
+            results.innerHTML = `
+
+                <p>
+                    「${keyword}」の検索結果
+                </p>
+
+                <p>
+                    該当するページが見つかりませんでした。
+                </p>
+
+            `;
+
+        }
+
+
+    } else {
+
+
+        results.innerHTML = `
+
+            <p>
+                検索したい言葉を入力してください。
+            </p>
+
+        `;
+
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
+```

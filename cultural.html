@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文化財検索 - 靜崗県三腑市</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>靜崗県三腑市</h1>
+    <p>三腑市公式ホームページ</p>
+
+    <div class="search-box">
+        <form action="search.html" method="get">
+            <input type="text" name="q" placeholder="サイト内検索">
+            <button type="submit">検索</button>
+        </form>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">ホーム</a> |
+    <a href="#">市政情報</a> |
+    <a href="#">観光・イベント</a> |
+    <a href="#">暮らしの情報</a> |
+    <a href="#">文化・歴史</a>
+</nav>
+
+<main>
+
+    <h2>三腑市文化財検索</h2>
+
+    <p>
+        三腑市が指定・登録する文化財について検索できます。
+    </p>
+
+    <div class="cultural-search">
+
+        <form action="cultural.html" method="get">
+
+            <div class="search-row">
+                <label>文化財名称</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class="search-row">
+                <label>所在地</label>
+                <input type="text" name="location">
+            </div>
+
+            <div class="search-row">
+                <label>分類</label>
+
+                <select name="category">
+                    <option value="">すべて</option>
+                    <option value="有形文化財">有形文化財</option>
+                    <option value="無形文化財">無形文化財</option>
+                    <option value="民俗文化財">民俗文化財</option>
+                    <option value="史跡">史跡</option>
+                </select>
+            </div>
+
+            <div class="search-button">
+                <button type="submit">検索</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <h2>検索結果</h2>
+
+    <div id="cultural-results"></div>
+
+</main>
+
+<footer>
+
+    <p>靜崗県三腑市役所</p>
+    <p>Copyright © Sanpu City All Rights Reserved.</p>
+
+</footer>
+
+
+<script>
+
+    const params = new URLSearchParams(window.location.search);
+
+    const name = params.get("name");
+
+    const results = document.getElementById("cultural-results");
+
+
+    if (name === "月仰祭場") {
+
+        results.innerHTML = `
+            <p>検索結果：1件</p>
+
+            <hr>
+
+            <h3>
+                <a href="cultural-01.html">
+                    月仰祭関連祭具
+                </a>
+            </h3>
+
+            <p>
+                分類：民俗文化財
+            </p>
+
+            <p>
+                所在地：三腑市月仰祭場
+            </p>
+
+            <p>
+                三腑月仰祭において使用される伝統的な祭具。
+            </p>
+        `;
+  } else if (name === "月待石") {
+
+        results.innerHTML = `
+            <p>検索結果：1件</p>
+
+            <hr>
+
+            <h3>
+                <a href="cultural-02.html">
+                    月待石
+                </a>
+            </h3>
+
+            <p>
+                分類：民俗文化財
+            </p>
+
+            <p>
+                所在地：三腑市月見坂
+            </p>
+
+            <p>
+                月喰興祭に関連する石造物。
+            </p>
+        `;
+
+
+    } else {
+
+        results.innerHTML = `
+            <p>
+                検索結果：0件
+            </p>
+
+            <p>
+                該当する文化財は見つかりませんでした。
+            </p>
+        `;
+    }
+
+</script>
+
+</body>
+
+</html>

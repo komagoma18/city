@@ -1,0 +1,296 @@
+body {
+
+    margin: 0;
+
+    background-color: #eeeeee;
+
+    color: #222222;
+
+    font-family:
+        "MS PGothic",
+        "MS Gothic",
+        sans-serif;
+
+    font-size: 14px;
+
+}
+
+
+header {
+
+    background-color: #d8d8d8;
+
+    border-bottom: 1px solid #888888;
+
+    padding: 10px 20px;
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+}
+
+
+header p {
+
+    margin: 5px 0 0;
+
+    color: #555555;
+
+}
+
+
+nav {
+
+    background-color: #eeeeee;
+
+    border-bottom: 1px solid #aaaaaa;
+
+    padding: 7px 20px;
+
+}
+
+
+nav a {
+
+    color: #0000aa;
+
+    margin-right: 10px;
+
+}
+
+
+main {
+
+    width: 900px;
+
+    max-width: calc(100% - 30px);
+
+    margin: 15px auto;
+
+}
+
+
+.search-area {
+
+    background-color: #dddddd;
+
+    border: 1px solid #aaaaaa;
+
+    padding: 10px;
+
+}
+
+
+.search-area input {
+
+    width: 400px;
+
+    max-width: 70%;
+
+    padding: 5px;
+
+    border: 1px solid #888888;
+
+}
+
+
+.search-area button {
+
+    padding: 5px 15px;
+
+}
+
+
+h2 {
+
+    font-size: 18px;
+
+    border-bottom: 2px solid #999999;
+
+    padding-bottom: 5px;
+
+}
+
+
+.category-list {
+
+    background-color: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+}
+
+
+.category-list a {
+
+    display: inline-block;
+
+    margin-right: 25px;
+
+    margin-bottom: 8px;
+
+    color: #0000aa;
+
+}
+
+
+.thread-list {
+
+    background-color: #ffffff;
+
+    border: 1px solid #cccccc;
+
+}
+
+
+.thread {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 8px 10px;
+
+    border-bottom: 1px solid #dddddd;
+
+}
+
+
+.thread a {
+
+    color: #0000aa;
+
+}
+
+
+.thread span {
+
+    color: #777777;
+
+}
+
+
+.search-thread {
+
+    background-color: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.thread-title a {
+
+    color: #0000aa;
+
+    font-size: 16px;
+
+}
+
+
+.thread-info {
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+
+}
+
+
+.search-thread p {
+
+    margin-bottom: 0;
+
+}
+
+
+footer {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background-color: #dddddd;
+
+    border-top: 1px solid #aaaaaa;
+
+    color: #666666;
+
+    font-size: 12px;
+
+}
+
+.thread-header {
+
+    background-color: #dddddd;
+
+    border: 1px solid #aaaaaa;
+
+    padding: 10px;
+
+}
+
+
+.thread-header h2 {
+
+    margin: 0 0 8px 0;
+
+    font-size: 18px;
+
+}
+
+
+.post {
+
+    display: flex;
+
+    background-color: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    border-top: none;
+
+    padding: 10px;
+
+}
+
+
+.post-number {
+
+    width: 45px;
+
+    flex-shrink: 0;
+
+    color: #555555;
+
+    font-weight: bold;
+
+}
+
+
+.post-body {
+
+    line-height: 1.6;
+
+}
+
+
+.post-body p {
+
+    margin: 3px 0 8px 0;
+
+}
