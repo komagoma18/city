@@ -294,3 +294,12 @@ footer {
     margin: 3px 0 8px 0;
 
 }
+
+ruby {
+    ruby-align: center;
+}
+
+rt {
+    font-size: 0.45em;
+    font-weight: normal;
+}
